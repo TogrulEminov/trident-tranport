@@ -256,8 +256,148 @@
     background-color: transparent;
 }
 
-/* !hero-section */
+/* ! all hero-banner */
+.hero-banner {
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+    background-size: auto 500px;
+    min-height: 450px;
+    padding: 40px 0;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
 
+.hero-banner::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-banner-title {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-banner-title article h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    color: #fff;
+}
+.hero-banner-title article .breadCrumps{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+.hero-banner-title article .breadCrumps li span,
+.hero-banner-title article .breadCrumps li a
+{
+    font-size: 18px;
+    color: #fff;
+}
+.contact-page{
+    margin: 30px 0;
+}
+.contact-page .row{
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.contact-page article h6{
+    color: #f6b457;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.contact-page article h3{
+    color: #000;
+    font-size: 22px;
+    line-height: 1.5;
+}
+.contact-page article p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: #666;
+    text-align:justify;
+}
+.contact-info{
+    width: 100%;
+    padding: 12px 0;
+    height: auto;
+    display: block;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid #dddddd3b;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 2px 0px;
+}
+.contact-info:last-child {
+    margin-top: 30px;
+}
+.contact-list {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-list .contact-item {
+    position: relative;
+    line-height: 55px;
+    padding: 0 16px;
+}
+
+.contact-list .contact-item .side {
+    display: block;
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(98.37deg, #f89e00 0.99%, #da2f68 100%);
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    left: 0px;
+}
+.contact-item .contact-item-content {
+    margin: 0;
+    padding: 0 24px;
+    border-radius: 10px;
+}
+
+.location-email-side {
+    line-height: 25px;
+    padding: 20px 26px !important;
+}
+
+.contact-item:first-child .contact-item-content {
+    background: rgb(245, 245, 245);
+}
+.contact-item .contact-item-content a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #212529;
+}
+.map-area {
+    background: #f5f5f5;
+    padding: 20px 0;
+}
+
+.ymaps-2-1-79-zoom__plus .ymaps-2-1-79-zoom__icon,
+.ymaps-2-1-79-zoom__minus .ymaps-2-1-79-zoom__icon {
+    top: 25%;
+    left: 25%;
+    transform: translate(-20%, -10%);
+}
+
+#map {
+    height: 400px;
+}
+/* !hero-section */
 .hero-slider .item {
     padding: 60px 0;
     background-size: cover !important;
@@ -662,7 +802,113 @@
     transition: 0.3s;
     border: none;
 }
+/* !calculator-page */
 
+.all-labels {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.transport-calc {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.transport-calc .row .title h1 {
+    font-size: 30px;
+    color: rgb(21, 2, 43);
+    text-align: center;
+}
+
+.calc-body {
+    padding: 10px 0;
+}
+
+.select-label {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.select-label label {
+    font-size: 20px;
+    text-align: start;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.select-label select {
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    height: 50px;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.input-label label {
+    font-size: 20px;
+    text-align: start;
+    width: 100%;
+}
+
+.input-label input {
+    height: 40px;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 10px;
+}
+
+.btn-label {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.btn-label button {
+    height: 40px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #059c2b;
+}
+
+
+
+.select-label select:focus {
+    border: 2px solid green;
+    outline: green;
+}
+
+.totalPrice p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.totalPrice p span {
+    font-weight: 500;
+    color: #666;
+}
 /* !footer */
 #footer {
     background-color: #020c1b;
@@ -786,7 +1032,7 @@
 
 @media only screen and (max-width:991.99px) {
     .all-side-bar {
-        display: block  ;
+        display: block;
     }
 
     .hamburger {
@@ -910,7 +1156,10 @@
 
 
 @media only screen and (max-width:767.99px) {
-
+/* !hero-banner */
+.hero-banner {
+    min-height: 350px;
+}
     .home-about .row .home-about-content p {
         max-width: 80%;
     }
@@ -927,15 +1176,21 @@
         right: 0px;
         top: calc(50% - 50px);
     }
+    /* !contact */
+    #map{
+        height: 300px;
+    }
 }
 
 @media only screen and (max-width:575.99px) {
-    .sidebar-nav{
+    .sidebar-nav {
         width: 240px;
     }
-    .mobile-social ul{
+
+    .mobile-social ul {
         column-gap: 40px;
     }
+
     .hero-slider .item {
         background-size: cover !important;
         background-position: 65% !important;
@@ -988,7 +1243,52 @@
         text-align: center;
     }
 
+/* !contact-page */
+#map {
+    height: 200px;
+}
 
+.hero-banner{
+    align-items: center;
+    min-height: 300px;
+}
+.hero-banner-title article .breadCrumps{
+    justify-content: center;
+}
+.hero-banner-title article h2{
+    font-size: 25px;
+    text-align: center;
+}
+.contact-page article h6{
+    text-align: center;
+}
+.contact-page article p{
+    text-align: center;
+}
+.contact-page article h3{
+    text-align: center;
+}
+/* !calculator */
+.transport-calc {
+    padding: 20px;
+}
+
+.transport-calc .row .title h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.select-label label,
+.input-label label {
+    font-size: 15px;
+}
+
+.select-label select,.input-label input {
+    height: 40px;
+}
+.input-label input{
+    font-size: 14px;
+}
     /*! footer */
     .footer-logo {
         text-align: center;
@@ -1033,5 +1333,9 @@
     /* !delivery-card */
     .delivery-card .card figure {
         height: 180px;
+    }
+    /* !calculator */
+    .transport-calc {
+        padding: 8px;
     }
 }
