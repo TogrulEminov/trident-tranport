@@ -38,7 +38,7 @@ function getCities(country) {
       if (selectData) {
         let data = '<option value="" selected>Choose a city</option>';
         selectData.fromCity.forEach((city) => {
-          data += `<option value="${city.city}">${city.city}</option>`;
+          data += `<option value="${city.id}">${city.city}</option>`;
         });
 
         fromcities.disabled = false;

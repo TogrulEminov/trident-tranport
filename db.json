@@ -13,6 +13,20 @@
           "city": "Baku"
         }
       ]
+    },
+    {
+      "id": 2,
+      "name": "Andorra",
+      "fromCity": [
+        {
+          "id": 5,
+          "city": "babul"
+        },
+        {
+          "id": 6,
+          "city": "Baku"
+        }
+      ]
     }
   ]
 }
