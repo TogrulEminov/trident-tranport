@@ -4,6 +4,6 @@ const body=document.querySelector('body')
 window.addEventListener('load', () => {
  setTimeout(() => {
   loader.style.display = 'none';
-  body.style.overflowY= 'none';
+  body.style.overflow= 'hidden';
  }, 2000);
 });
