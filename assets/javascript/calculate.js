@@ -143,9 +143,6 @@ submitBTN.addEventListener('click', async () => {
 
   const response = await fetch(`http://localhost:8999/distance/${id1}/${id2}/${weightValue}`);
   const data = await response.json();
-
-  console.log(data);
-
   document.querySelector("#price-span").innerHTML = `Price:
   <span>${data}</span>`
 });
