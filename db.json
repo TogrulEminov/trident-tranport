@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Afghanistan",
+      "fromCity": [
+        {
+          "id": 5,
+          "city": "Kabul"
+        },
+        {
+          "id": 6,
+          "city": "Baku"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Andorra",
+      "fromCity": [
+        {
+          "id": 5,
+          "city": "babul"
+        },
+        {
+          "id": 6,
+          "city": "Baku"
+        }
+      ]
+    }
+  ]
+}
