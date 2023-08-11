@@ -916,18 +916,21 @@
     padding: 10px;
 }
 
-.btn-label {
-    width: 100%;
-    margin: 10px 0;
+.submit-btn {
+    margin: 20px 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
-.btn-label button {
+.btn-label {
+    width: 50%;
+    margin: 0 auto;
     height: 40px;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     border: 0;
     outline: 0;
     border-radius: 5px;
@@ -944,8 +947,9 @@
 }
 
 .totalPrice p {
-    font-size: 20px;
+    font-size: 4%;
     font-weight: 600;
+    font-weight: bold;
 }
 
 .totalPrice p span {
@@ -972,7 +976,7 @@
 
 .footer-logo a img {
     max-width: 200px;
-    height: 60px;
+    height: 30px;
 }
 
 
@@ -1223,6 +1227,11 @@
         top: calc(50% - 50px);
     }
 
+    /* !calculate */
+    .btn-label {
+        width: 100%;
+    }
+
     /* !contact */
     #map {
         height: 300px;
@@ -1289,10 +1298,11 @@
     .home-about .row .home-about-content {
         text-align: center;
     }
-/* !about-page */
-.static-content .about-content figure {
-    height: 250px;
-}
+
+    /* !about-page */
+    .static-content .about-content figure {
+        height: 250px;
+    }
 
     /* !contact-page */
     #map {
@@ -1389,10 +1399,11 @@
 }
 
 @media only screen and (max-width:344.5px) {
-/* !about-page */
-.static-content .about-content figure {
-    height: 200px;
-}
+
+    /* !about-page */
+    .static-content .about-content figure {
+        height: 200px;
+    }
 
     /* !delivery-card */
     .delivery-card .card figure {
