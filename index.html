@@ -25,10 +25,25 @@
                 </div>
                 <div class="header-right">
                     <ul class="navbar-desktop-list">
-                        <li><a href="./index.html">Əsas</a></li>
-                        <li><a href="./about.html">Haqqımızda</a></li>
-                        <li><a href="./calculator.html">Kalkulyator</a></li>
-                        <li><a href="./contact.html">Əlaqə</a></li>
+                        <li><a href="./index.html" data-i18n="demo.home"></a></li>
+                        <li><a href="./about.html" data-i18n="demo.aboutUs"></a></li>
+                        <li><a href="./calculator.html" data-i18n="demo.calculate"></a></li>
+                        <li><a href="./contact.html" data-i18n="demo.contact"></a></li>
+                    </ul>
+                    <ul class="lang-picker" id="language-desktop">
+                        <li id="az">
+                            <img src="./assets/media/Flag_of_Azerbaijan.svg" alt="az">
+                        </li>
+                        <li id="tr">
+                            <img src="./assets/media/turkey.webp" alt="tr">
+                        </li>
+                        <li id="en">
+                            <img src="./assets/media/Flag-United-Kingdom.webp" alt="en">
+                        </li>
+                        <li id="ru">
+                            <img src="./assets/media/russian.jpg" alt="ru">
+                        </li>
+
                     </ul>
                     <div class="hamburger">
                         <button>
@@ -52,17 +67,23 @@
                 </div>
                 <div class="sidebar-body">
                     <ul class="menu">
-                        <li><a href="./index.html">Əsas</a></li>
-                        <li>
-                            <a href="./about.html">Haqqımızda</a>
+                        <li><a href="./index.html" data-i18n="demo.home"></a></li>
+                        <li><a href="./about.html" data-i18n="demo.aboutUs"></a></li>
+                        <li><a href="./calculator.html" data-i18n="demo.calculate"></a></li>
+                        <li><a href="./contact.html" data-i18n="demo.contact"></a></li>
+                    </ul>
+                    <ul class="lang-picker" id="language-mobile">
+                        <li id="az">
+                            <img src="./assets/media/Flag_of_Azerbaijan.svg" alt="az">
                         </li>
-                        <li>
-                            <a href="./calculator.html">Kalkulyator</a>
+                        <li id="tr">
+                            <img src="./assets/media/turkey.webp" alt="tr">
                         </li>
-
-                        <li>
-                            <a href="./contact.html">Əlaqə</a>
+                        <li id="en">
+                            <img src="./assets/media/Flag-United-Kingdom.webp" alt="en">
                         </li>
+                        <li id="ru">
+                            <img src="./assets/media/russian.jpg" alt="ru">
                         </li>
                     </ul>
                     <div class="mobile-social">
@@ -280,19 +301,10 @@
                     </div>
                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-xs-12 footer-link">
                         <ul class="footer-list">
-                            <li>
-                                <a href="./index.html">Əsas</a>
-                            <li>
-
-                            <li>
-                                <a href="./about.html">Lahiyələr</a>
-                            </li>
-                            <li>
-                                <a href="./calculator.html">Kalkulyator</a>
-                            </li>
-                            <li>
-                                <a href="./contact.html">Əlaqə</a>
-                            </li>
+                            <li><a href="./index.html" data-i18n="demo.home"></a></li>
+                            <li><a href="./about.html" data-i18n="demo.aboutUs"></a></li>
+                            <li><a href="./calculator.html" data-i18n="demo.calculate"></a></li>
+                            <li><a href="./contact.html" data-i18n="demo.contact"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -350,9 +362,10 @@
         </div>
         </div>
     </footer>
-<script src="./assets/javascript/loading.js"></script>
-
     <script src="./assets/javascript/jquery.js"></script>
+    <script src="./assets/javascript/loading.js"></script>
+    <script src="./assets/javascript/language.js"></script>
+    <script src="./assets/javascript/i18n.min.js"></script>
     <script src="./assets/javascript/aos.js"></script>
     <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
     <script src="./assets/javascript/bootstrap.min.js"></script>

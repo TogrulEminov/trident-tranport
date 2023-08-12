@@ -8,6 +8,17 @@
     width: 100%;
 }
 
+.header.sticky {
+    top: 0;
+    position: fixed;
+    box-shadow: 10px -6px 15px black;
+    transition: all 0.4s ease;
+    animation: smoothScroll 1s;
+    border-top: none;
+    background: #000000e6;
+    z-index: 222;
+}
+
 .sticky-head {
     transition: .5s;
     transform: translateY(-50%);
@@ -41,26 +52,40 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 10px;
 }
 
 .header-right .navbar-desktop-list {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     padding: 0;
     margin: 0;
 }
 
-.header.sticky {
-    top: 0;
-    position: fixed;
-    box-shadow: 10px -6px 15px black;
-    transition: all 0.4s ease;
-    animation: smoothScroll 1s;
-    border-top: none;
-    background: #000000e6;
-    z-index: 222;
+#language-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
 }
+
+#language-desktop li {
+    cursor: pointer;
+}
+
+#language-desktop li img {
+    height: 20px;
+    border-radius: 50%;
+    width: 20px;
+}
+
+#language-mobile {
+    display: none;
+}
+
 
 /* !side-bar-mobile */
 .all-side-bar {
@@ -184,6 +209,7 @@
     display: block;
     padding: 10px 0;
     text-decoration: none;
+    text-transform: capitalize;
     color: #fff;
 }
 
@@ -215,7 +241,8 @@
     padding: 15px 10px;
     display: block;
     color: #fff;
-    font-size: 18px;
+    text-transform: capitalize;
+    font-size: 16px;
     font-weight: bold;
     --b: 0.2em;
     --c: #1095c1;
@@ -1081,6 +1108,28 @@
 @media only screen and (max-width:991.99px) {
     .all-side-bar {
         display: block;
+    }
+
+    #language-desktop {
+        display: none;
+    }
+
+    #language-mobile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+        padding: 20px 20px 0;
+        margin: 0;
+    }
+
+    #language-mobile li {
+        cursor: pointer;
+    }
+
+    #language-mobile li img {
+        height: 30px;
+        height: 20px;
     }
 
     .hamburger {
