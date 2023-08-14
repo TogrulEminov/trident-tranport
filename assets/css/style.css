@@ -324,6 +324,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    text-transform: capitalize;
     padding: 0;
 }
 
@@ -935,7 +936,7 @@
 }
 
 .input-label input {
-    height: 40px;
+    height: 50px;
     border-radius: 4px;
     width: 100%;
     border: 1px solid #ddd;
@@ -945,14 +946,13 @@
 
 .submit-btn {
     margin: 20px 0;
-    justify-content: center;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .btn-label {
-    width: 50%;
-    margin: 0 auto;
+    width: 60%;
     height: 40px;
     padding: 10px 20px;
     display: flex;
@@ -963,16 +963,12 @@
     border-radius: 5px;
     color: #fff;
     font-size: 18px;
-    background-color: #059c2b;
+    background-color: rgb(3, 1, 33);
 }
-
-
-
 .select-label select:focus {
-    border: 2px solid green;
-    outline: green;
+    border: 2px solid rgb(3, 1, 33);
+    outline:rgb(3, 1, 33);
 }
-
 .totalPrice p {
     font-size: 40px;
     font-weight: 600;
@@ -1165,7 +1161,13 @@
         justify-content: center;
         margin-top: 20px;
     }
-
+    
+    .btn-label{
+        width: 100%;
+    }
+    .calc-btnandprice{
+        flex-direction: column-reverse;
+    }
     /* !footer */
     #footer {
         padding: 33px 0 0;
@@ -1461,6 +1463,6 @@
 
     /* !calculator */
     .transport-calc {
-        padding: 8px;
+        padding: 15px 8px;
     }
 }

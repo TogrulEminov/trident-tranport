@@ -122,11 +122,11 @@
                     <div class="col-12">
                         <div class="hero-banner-title">
                             <article>
-                                <h2>Kalkulyator</h2>
+                                <h2 data-i18n="demo.calculate"></h2>
                                 <ul class="breadCrumps">
-                                    <li><a href="./index.html">Əsas</a></li>
+                                    <li><a href="./index.html" data-i18n="demo.home"></a></li>
                                     <li><span>/</span></li>
-                                    <li><span>Kalkulyator</span></li>
+                                    <li><span data-i18n="demo.calculate"></span></li>
                                 </ul>
                             </article>
                         </div>
@@ -140,7 +140,7 @@
             <div class="row">
                 <div class="col-12">
                     <article class="title">
-                        <h1>Transport Price Calculator</h1>
+                        <h1 data-i18n="demo.TransportPriceCalculator"></h1>
                     </article>
                     <article class="calc-body">
                         <from  >
@@ -174,7 +174,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 col-lg-6">
                                     <div class="input-label">
                                         <label for="weight">Weight (Tones)</label>
                                         <input type="text" placeholder="Enter your product weight" id="weight">
@@ -182,16 +182,22 @@
                                 </div>
                                
                             </div>
-                            <div class="submit-btn">
-                                 <button class="btn-label" id="submit" type="submit">Hesabla</button>
-                            </div>
+                            <div class="row calc-btnandprice" >
+                                <div class="col-12 col-lg-6">
+                                    <div class="totalPrice">
+                                        <p id="price-span"> </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <div class="submit-btn">
+                                        <button class="btn-label" id="submit" type="submit" data-i18n="demo.calc"></button>
+                                   </div>
+                                </div>
+                                </div>
                         </from>
                     </article>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="totalPrice">
-                                <p id="price-span"> </p>
-                            </div>
+                  
+                       
         </section>
         <section id="question">
             <div class="question-overlay"></div>
@@ -199,8 +205,8 @@
                 <div class="row">
                     <div class="col-12 col-lg-6">
                         <article class="question-text">
-                            <h3>Sualınız var?</h3>
-                            <p>Bir kliklə whatsapp nömrəmizə yazın, <b>dərhal</b> yardımçı olaq.</p>
+                            <h3 data-i18n="demo.getQusition"></h3>
+                            <p data-i18n="demo.writeWhatsaap"></p>
                         </article>
                     </div>
                     <div class="col-12 col-lg-6">
@@ -292,6 +298,7 @@
     <script src="./assets/javascript/calculate.js"></script>
    <script src="./assets/javascript/jquery.js"></script>
    <script src="./assets/javascript/language.js"></script>
+   <script src="./assets/javascript/i18n.min.js"></script>
    <script src="./assets/javascript/i18n.min.js"></script>
    <script src="./assets/javascript/aos.js"></script>
    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
