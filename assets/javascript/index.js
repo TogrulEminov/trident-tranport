@@ -46,7 +46,6 @@ $(document).ready(function () {
     dots: true,
     autoplay: true,
     autoplayTimeout: 3500,
-    autoplayHoverPause: true,
   });
 });
 //!blog courusel
