@@ -466,7 +466,6 @@
 #map {
     height: 400px;
 }
-
 /* !hero-section */
 .hero-slider .item {
     padding: 60px 0;
@@ -485,7 +484,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 50px;
+    bottom: 30px;
 }
 
 .hero-slider .owl-dots .owl-dot {
@@ -536,15 +535,13 @@
     z-index: 1;
 }
 
-
-
 .hero-slider .item article {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     row-gap: 20px;
     z-index: 2;
-    position: fixed;
+    position: relative;
 }
 
 .hero-slider .item article h1 {
@@ -555,8 +552,9 @@
 }
 
 .hero-slider .item article p {
-    font-size: 30px;
+    font-size: 25px;
     color: #fff;
+    opacity: .5;
     font-weight: bold;
     line-height: 1.5;
 }
@@ -757,7 +755,7 @@
 
 /* !question */
 #question {
-    background: url("../media/bg-question.png");
+    background: url("../media/bg-question.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

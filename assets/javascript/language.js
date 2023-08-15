@@ -146,6 +146,12 @@ var demoJson = {
       ru: 'Быстро, безопасно и надежно',
       tr: "Hızlı ve Emniyetli",
     },
+    sliderDesc1:{
+      az: 'Hər zaman xidmətinizdəyik',
+      en: 'We are always at your service',
+      ru: 'Мы всегда к вашим услугам',
+      tr: "Her zaman hizmetinizdeyiz",
+    },
     profesyonelServis:{
       az: 'Peşəkar xidmət',
       en: 'Profesyonel servis',
