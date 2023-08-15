@@ -341,14 +341,14 @@
 }
 
 .static-content .about-content figure {
-    height: 350px;
-    object-fit: contain;
+    height: 500px;
     padding: 0;
     margin-bottom: 20px;
 }
 
 .static-content .about-content figure img {
     width: 100%;
+    object-fit: contain;
     height: 100%;
 }
 
@@ -539,12 +539,12 @@
 
 
 .hero-slider .item article {
-    position: relative;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     row-gap: 20px;
     z-index: 2;
+    position: fixed;
 }
 
 .hero-slider .item article h1 {
@@ -597,8 +597,7 @@
 }
 
 .delivery-card .card figure {
-    height: 200px;
-    object-fit: contain;
+    height: 250px;
     width: 100%;
     overflow: hidden;
     border-radius: 5px 5px 0 0;
@@ -610,83 +609,23 @@
     transform: scale(1);
     width: 100%;
     transition: .5s;
+    object-fit: cover;
 
 }
 
 .delivery-card .card article h4 {
     font-size: 20px;
     color: #111;
+    height: 40px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     font-weight: bold;
+    text-align: center;
 }
-
 .delivery-card .card article {
     padding: 20px;
 }
-
-.delivery-card .card article p {
-    color: #666;
-    margin: 0;
-    height: 80px;
-    font-size: 16px;
-    line-height: 1.5;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-}
-
-.delivery-card .card article p span {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 14px;
-}
-
-.delivery-card .card article a {
-    animation: shadowAnimation 2s infinite;
-    background: linear-gradient(98.37deg, #00f87c 0.99%, #2f3ada 100%);
-    text-transform: inherit;
-    padding: 22px 32px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 15px;
-    line-height: 1;
-    line-height: 0;
-    cursor: pointer;
-    transition: color 0.4s linear;
-    position: relative;
-    z-index: 1;
-    border: 0;
-    overflow: hidden;
-}
-
-.delivery-card .card article a:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 102%;
-    height: 102%;
-    background: linear-gradient(98.37deg, #048023 0.99%, rgb(119, 7, 44) 100%);
-    z-index: 1;
-    border-radius: 0px;
-    transition: transform 0.5s;
-    transition-timing-function: ease;
-    transform-origin: 0 0;
-    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
-    transform: scaleX(0);
-    border-radius: 0px;
-}
-
-.delivery-card .card article a:hover::before {
-    transform: scaleX(1);
-    z-index: -1;
-}
-
 .delivery-card .delivery-card-carousel .owl-nav .owl-prev {
     position: absolute;
     left: -25px;
@@ -1385,7 +1324,10 @@
     .contact-page article h3 {
         text-align: center;
     }
-
+    .delivery-card .card article h4{
+        text-align: center;
+        font-size: 18px;
+    }
     /* !calculator */
     .transport-calc {
         padding: 20px;
@@ -1442,10 +1384,6 @@
     .copyright p {
         text-align: center;
         font-size: 16px;
-    }
-
-    .copyright p span {
-        display: none;
     }
 }
 

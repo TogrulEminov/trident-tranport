@@ -53,6 +53,110 @@ var demoJson = {
       en: 'Write to our whatsapp number with one click',
       ru: 'Напишите на наш номер WhatsApp в один клик',
       tr: 'Tek tıkla whatsapp numaramıza yazın?',
-    }
+    },
+    writeUs:{
+      az: 'WhatsApp-a yazın',
+      en: 'Write to WhatsApp',
+      ru: 'Написать в Ватсап',
+      tr: "WhatsApp'a yaz",
+    },
+    copyright:{
+      az: 'Bütün hüquqlar  qorunur.',
+      en: 'All rights reserved.',
+      ru: 'Все права защищены.',
+      tr: "Her hakkı saklıdır.",
+    },
+    location:{
+      az: 'Ünvan:',
+      en: 'Address:',
+      ru: 'Адрес:',
+      tr: "Adres:",
+    },
+    bakuAzerbaijan:{
+      az: 'Bakı, Azərbaycan',
+      en: 'Baku,Azerbiajan',
+      ru: 'Баку, Азербайджан',
+      tr: "Bakü, Azerbaycan",
+    },
+    email:{
+      az: 'E-poçt',
+      en: 'Email:',
+      ru: 'Электронная почта:',
+      tr: "E-posta:",
+    },
+    contactForm:{
+      az: 'İstənilən vaxt nümayəndəmizlə danışmaqdan çekinmeyin, zəhmət olmasa  veb saytımızdakı  əlaqə nömrələrimizdən birindən istifadə edin.',
+      en: 'Feel free to speak to a representative at any time, please use one of our contact numbers on our website.',
+      ru: 'Не стесняйтесь поговорить с представителем в любое время, пожалуйста, используйте один из наших контактных номеров на нашем веб-сайте.',
+      tr: "İstediğiniz zaman bir temsilciyle görüşmekten çekinmeyin, lütfen web sitemizdeki iletişim numaralarımızdan birini kullanın.",
+    },
+    contactContent:{
+      az: 'Bizim xidmətimiz yükdən  asılı olaraq  bir neçə qrupa bölünür.Bundan başqa eyni region daxilində xidmət göstərmək üçün  xidmətimiz də mövcuddur. Yükdaşıma xidmətini sifariş vermək üçün nomreye zəng edə və ya onlayn whatsapp buttonu bölmələrindən istifadə edə bilərsiniz.',
+      en: 'Our service is divided into several groups depending on the load. In addition, we also have a service to provide service within the same region. To order the freight service, you can call the number or use the online whatsapp button sections.',
+      ru: 'Наш сервис разделен на несколько групп в зависимости от нагрузки, кроме того, у нас есть сервис по оказанию услуг в пределах одного региона. Для заказа услуги грузоперевозки вы можете позвонить по номеру или воспользоваться кнопками онлайн разделов whatsapp.',
+      tr: "Servisimiz yüke göre birkaç gruba ayrılmaktadır.Ayrıca aynı bölge içerisinde hizmet verecek servisimiz de bulunmaktadır. Kargo hizmeti siparişi vermek için numarayı arayabilir veya online whatsapp butonu bölümlerini kullanabilirsiniz.",
+    },
+    serviceTitle:{
+      az: 'Xidmetler',
+      en: 'Services',
+      ru: 'Услуги',
+      tr: "Hizmetler",
+    },
+    card1:{
+      az: '24/7 xidmətinizdəyik ',
+      en: 'We are at your service 24/7',
+      ru: 'Мы к вашим услугам 24/7',
+      tr: "7/24 hizmetinizdeyiz",
+    },
+    
+    card2:{
+      az: 'Təhlükəsiz Tam sığortalı Servis',
+      en: 'Secure Fully Insured Service',
+      ru: 'Безопасный полностью застрахованный сервис',
+      tr: "Güvenli Tam sigortalı Hizmet",
+    },
+    card3:{
+      az: 'Qiymət Razılaşması🤝',
+      en: 'Price Agreement🤝',
+      ru: 'Соглашение о цене🤝',
+      tr: "Fiyat Sözleşmesi🤝",
+    },
+    card4:{
+      az: 'Sifariş etmək sizdən , Çatdırılıma Bizdən',
+      en: 'Order from you, Delivery from us',
+      ru: 'Заказ у вас, Доставка у нас',
+      tr: "Sipariş sizden, teslimat bizden",
+    },
+    
+    card5:{
+      az: 'Təhlükəlli yüklərin daşınması ',
+      en: 'Transportation of dangerous goods',
+      ru: 'Перевозка опасных грузов',
+      tr: "Tehlikeli maddelerin taşınması",
+    },
+    card6:{
+      az: 'Ölkə daxili  yüklərin daşınması',
+      en: 'Domestic cargo transportation',
+      ru: 'Перевозка грузов внутри страны',
+      tr: "Yurtiçi kargo taşımacılığı",
+    },
+    sliderTitle1:{
+      az: 'Sürətli, Güvənli və Təhlükəsiz',
+      en: 'Fast, Safe and Secure',
+      ru: 'Быстро, безопасно и надежно',
+      tr: "Hızlı ve Emniyetli",
+    },
+    profesyonelServis:{
+      az: 'Peşəkar xidmət',
+      en: 'Profesyonel servis',
+      ru: 'Професиональные услуги',
+      tr: "Profesyonel servis",
+    },
+    internationalExperience:{
+      az: 'Beynəlxalq təcrübə ilə.',
+      en: 'With international experience.',
+      ru: 'С международным опытом.',
+      tr: "Uluslararası deneyime sahip.",
+    },
   },
 };
