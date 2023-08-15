@@ -106,7 +106,7 @@ function Cities(city) {
     return;
   }
 
-  fetch('http://localhost:8999/distance/allcities') 
+  fetch('http://localhost:8999/distance/allcities') // Replace with the appropriate URL
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
