@@ -466,6 +466,7 @@
 #map {
     height: 400px;
 }
+
 /* !hero-section */
 .hero-slider .item {
     padding: 60px 0;
@@ -621,9 +622,11 @@
     font-weight: bold;
     text-align: center;
 }
+
 .delivery-card .card article {
     padding: 20px;
 }
+
 .delivery-card .delivery-card-carousel .owl-nav .owl-prev {
     position: absolute;
     left: -25px;
@@ -902,12 +905,18 @@
     font-size: 18px;
     background-color: rgb(3, 1, 33);
 }
+
 .select-label select:focus {
     border: 2px solid rgb(3, 1, 33);
-    outline:rgb(3, 1, 33);
+    outline: rgb(3, 1, 33);
 }
+
 .totalPrice p {
-    font-size: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+    font-size: 30px;
     font-weight: 600;
     font-weight: bold;
 }
@@ -1098,13 +1107,15 @@
         justify-content: center;
         margin-top: 20px;
     }
-    
-    .btn-label{
+
+    .btn-label {
         width: 100%;
     }
-    .calc-btnandprice{
+
+    .calc-btnandprice {
         flex-direction: column-reverse;
     }
+
     /* !footer */
     #footer {
         padding: 33px 0 0;
@@ -1322,10 +1333,12 @@
     .contact-page article h3 {
         text-align: center;
     }
-    .delivery-card .card article h4{
+
+    .delivery-card .card article h4 {
         text-align: center;
         font-size: 18px;
     }
+
     /* !calculator */
     .transport-calc {
         padding: 20px;
