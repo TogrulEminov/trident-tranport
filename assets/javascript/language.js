@@ -164,5 +164,54 @@ var demoJson = {
       ru: 'С международным опытом.',
       tr: "Uluslararası deneyime sahip.",
     },
+    fromCountry:{
+      az: 'Ölkədən:',
+      en: 'From country:',
+      ru: 'Из страны:',
+      tr: "Ülkeden:",
+    },
+    fromCity:{
+      az: 'Şəhərdən:',
+      en: 'From city:',
+      ru: 'Из города:',
+      tr: "Şehirden:",
+    },
+    chooseCity:{
+      az: 'Bir şəhər seçin',
+      en: 'Choose a city',
+      ru: 'Выберите город',
+      tr: "Bir şehir seç",
+    },
+    weight:{
+      az: 'Çəki (Ton)',
+      en: 'Weight (Tones)',
+      ru: 'Вес (Тонны)',
+      tr: "Ağırlık (Ton)",
+    },
+    toCity:{
+      az: 'Şəhərə:',
+      en: 'To city:',
+      ru: 'В город:',
+      tr: "Şehre:",
+    },
+    toCountry:{
+      az: 'Ölkəyə:',
+      en: 'To country:',
+      ru: 'В страну:',
+      tr: "Ülkeye:",
+    },
+    chooseCountry:{
+      az: 'Bir ölkə seçin',
+      en: 'Choose a country',
+      ru: 'Выберите страну',
+      tr: "Bir ülke seç",
+    },
+    enterProductWeight:{
+      az: 'Məhsulun çəkisini daxil edin...',
+      en: 'Enter your product weight...',
+      ru: 'Введите вес вашего продукта...',
+      tr: "Ürün ağırlığınızı girin...",
+    },
+
   },
 };

@@ -1,19 +1,23 @@
 // first label
 const fromCountries = document.getElementById('fromcountry');
 const fromCities = document.getElementById('fromcities');
+const submitBTN = document.querySelector("#submit");
+const weight = document.getElementById("weight");
 
+// function
 window.addEventListener('DOMContentLoaded', () => {
   fetch('http://localhost:8999/distance/allcities')
     .then(response => {
       if (!response.ok) {
+        submitBTN.disabled="true"
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
       return response.json();
     })
     .then(datas => {
+      submitBTN.disabled="false"
       const uniqueCountries = [...new Set(datas.map(element => element.country))];
-
-      let html = '<option selected>Choose a country</option>';
+      let html = "<option selected data-i18n='demo.chooseCountry'></option>";
       uniqueCountries.forEach(country => {
         html += `
           <option value="${country}">${country}</option>
@@ -22,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
       fromCountries.innerHTML = html;
     })
     .catch(error => {
-      console.error('Fetch error:', error);
+    return error
     });
 });
 
@@ -49,7 +53,7 @@ function getCities(country) {
       const selectData = cityData.filter(city => city.country === country);
 
       if (selectData.length > 0) {
-        let data = '<option value="" selected>Choose a city</option>';
+        let data = "<option value='' data-i18n='demo.chooseCity' selected></option>";
         selectData.forEach(city => {
           data += `<option value="${city.id}">${city.name}</option>`;
         });
@@ -59,7 +63,7 @@ function getCities(country) {
       }
     })
     .catch(error => {
-      console.error('Fetch error:', error);
+     return error
     });
 }
 
@@ -80,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
     .then(datas => {
       const uniqueCountries = [...new Set(datas.map(element => element.country))];
 
-      let html = '<option selected>Choose a country</option>';
+      let html = "<option selected  data-i18n='demo.chooseCountry'></option>";
       uniqueCountries.forEach(country => {
         html += `
           <option value="${country}">${country}</option>
@@ -89,7 +93,7 @@ window.addEventListener('DOMContentLoaded', () => {
       toCountries.innerHTML = html;
     })
     .catch(error => {
-      console.error('Fetch error:', error);
+     return error
     });
 });
 
@@ -106,7 +110,7 @@ function Cities(city) {
     return;
   }
 
-  fetch('http://localhost:8999/distance/allcities') // Replace with the appropriate URL
+  fetch('http://localhost:8999/distance/allcities') 
     .then(response => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -117,7 +121,7 @@ function Cities(city) {
       const selectData = cityData.filter(cities => cities.country === city);
 
       if (selectData.length > 0) {
-        let data = '<option value="" selected>Choose a city</option>';
+        let data = "<option value='' data-i18n='demo.chooseCity' selected></option>";
         selectData.forEach(city => {
           data += `<option value="${city.id}">${city.name}</option>`;
         });
@@ -127,14 +131,13 @@ function Cities(city) {
       }
     })
     .catch(error => {
-      console.error('Fetch error:', error);
+   return error
     });
 }
 
 
 // display wieght
-const submitBTN = document.querySelector("#submit");
-const weight = document.getElementById("weight");
+
 
 submitBTN.addEventListener('click', async () => {
   const id1 = fromCities.options[fromCities.selectedIndex].value;

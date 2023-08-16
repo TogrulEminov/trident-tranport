@@ -143,41 +143,41 @@
                         <h1 data-i18n="demo.TransportPriceCalculator"></h1>
                     </article>
                     <article class="calc-body">
-                        <from  >
+                        <from>
                             <div class="row">
                                 <div class="col-12 col-lg-6  col-md-6">
                                     <div class="select-label">
-                                        <label for="fromcountry">From Country:</label>
+                                        <label for="fromcountry" data-i18n="demo.fromCountry"></label>
                                         <select id="fromcountry" name="countries"></select>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 col-md-6">
                                     <div class="select-label">
-                                        <label for="fromcity">From City:</label>
+                                        <label for="fromcity" data-i18n="demo.fromCity"></label>
                                         <select name="cities" id="fromcities" disabled>
-                                            <option value="">Choose a city</option>
+                                            <option value="" data-i18n="demo.chooseCity"></option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 col-md-6">
                                     <div class="select-label">
-                                        <label for="tocountry">To Country:</label>
+                                        <label for="tocountry" data-i18n="demo.toCountry"></label>
                                         <select name="" id="tocountry">
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 col-md-6">
                                     <div class="select-label">
-                                        <label for="tocity">To City:</label>
+                                        <label for="tocity" data-i18n="demo.toCity"></label>
                                         <select  id="tocity" disabled>
-                                            <option value="">Choose a city</option>
+                                            <option value="" data-i18n="demo.chooseCity"></option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <div class="input-label">
-                                        <label for="weight">Weight (Tones)</label>
-                                        <input type="text" placeholder="Enter your product weight" id="weight">
+                                        <label for="weight" data-i18n="demo.weight"></label>
+                                        <input type="text" data-i18n-placeholder="demo.enterProductWeight" id="weight">
                                     </div>
                                 </div>
                                
@@ -190,14 +190,12 @@
                                 </div>
                                 <div class="col-12 col-lg-6">
                                     <div class="submit-btn">
-                                        <button class="btn-label" id="submit" type="submit" data-i18n="demo.calc"></button>
+                                        <button class="btn-label" id="submit" type="submit" data-i18n="demo.calc" disabled></button>
                                    </div>
                                 </div>
                                 </div>
                         </from>
                     </article>
-                  
-                       
         </section>
         <section id="question">
             <div class="question-overlay"></div>
@@ -292,12 +290,11 @@
         </div>
         </div>
     </footer>
-<script src="./assets/javascript/loading.js"></script>
+    <script src="./assets/javascript/loading.js"></script>
+    <script src="./assets/javascript/jquery.js"></script>
+    <script src="./assets/javascript/language.js"></script>
+    <script src="./assets/javascript/i18n.min.js"></script>
     <script src="./assets/javascript/calculate.js"></script>
-   <script src="./assets/javascript/jquery.js"></script>
-   <script src="./assets/javascript/language.js"></script>
-   <script src="./assets/javascript/i18n.min.js"></script>
-   <script src="./assets/javascript/i18n.min.js"></script>
    <script src="./assets/javascript/aos.js"></script>
    <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
    <script src="./assets/javascript/bootstrap.min.js"></script>
