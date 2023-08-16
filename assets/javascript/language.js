@@ -103,7 +103,7 @@ var demoJson = {
       tr: "Hizmetler",
     },
     card1:{
-      az: '24/7 xidmətinizdəyik ',
+      az: '24/7 xidmətinizdəyik',
       en: 'We are at your service 24/7',
       ru: 'Мы к вашим услугам 24/7',
       tr: "7/24 hizmetinizdeyiz",
